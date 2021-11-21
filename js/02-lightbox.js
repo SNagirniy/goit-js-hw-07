@@ -13,7 +13,7 @@ container.innerHTML = insertElementMarkup;
 
 function createElements(items) {
     return items.map(item =>
-     `
+     `<li>
     <a class="gallery__link" href="${item.original}">
     <img
       class="gallery__image"
@@ -21,6 +21,7 @@ function createElements(items) {
       alt="${item.description}"
     />
   </a>
+  </li>
 `).join('')
 };
 

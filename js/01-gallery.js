@@ -40,5 +40,6 @@ function handleImageClick(event) {
 	`);
     createModal.show()
 
-    window.addEventListener('keydown', (event) => { if(event.code === "Escape") {  createModal.close() }});
+  window.addEventListener('keydown', (event) => { if (event.code === "Escape") { createModal.close() } });
+  window.removeEventListener('keydown', (event));
 };
